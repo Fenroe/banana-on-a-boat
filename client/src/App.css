@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app {
+  width: 100vw;
+  max-width: 100%;
+}
+
+.hero {
+  min-height: calc(100vh - 80px);
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 2rem;
+}
+
+.hero-timer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  font-size: 1.5rem;
+}
+
+.hero-timer-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.timer-number {
+  font-size: 3rem;
+}
+
+section {
+  width: 100%;
+}
+
+.destination {
+  width: 100%;
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.destination.barcelona {
+  background-image: url("/barcelona.avif");
+}
+
+.destination.palma {
+  background-image: url("/palma.jpg");
+}
+
+.destination.cannes {
+  background-image: url("/cannes.jpg");
+}
+
+.destination.corsica {
+  background-image: url("/ajaccio.avif");
+}
+
+.destination.livorno {
+  background-image: url("/livorno.jpeg");
+}
+
+.destination.rome {
+  background-image: url("/rome.jpg");
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+}
+
+.destination-text-container {
+  padding: 16px;
+  background-color: rgba(255,255,255,0.75);
+  width: fit-content;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.destination-text-container>h2 {
+  font-size: 36px;
+}
+
+.destination-text-container>h3 {
+  font-size: 24px;
+}
